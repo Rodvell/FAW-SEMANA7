@@ -1,0 +1,8 @@
+<div id="caja">
+    <div>Grados: <input type="number" [(ngModel)]="grad"></div>
+    <div>Tipo:   <select [(ngModel)]="tipo">
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+    </select></div>
+    <button (click)="realizarC()">Realizar Conversion</button>
+</div>

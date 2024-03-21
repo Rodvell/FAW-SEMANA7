@@ -1,0 +1,8 @@
+<div class="total">
+    <div class="caja"><app-h-personajes (personajeImg)="per($event)"></app-h-personajes></div>
+    <div class="caja">
+        <div *ngFor="let sel of list">
+            <img src={{sel.result}}>
+        </div>
+    </div>
+</div>    

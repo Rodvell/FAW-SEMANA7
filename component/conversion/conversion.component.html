@@ -1,0 +1,13 @@
+<app-h-conversion (convertFinal)="ConversionEmit($event)"></app-h-conversion>
+<div id="caja">
+    <Table>
+        <thead *ngIf="list.length > 0">
+            <td>Celsius</td>
+            <td>Fahrenheit</td>
+        </thead>
+        <tr *ngFor="let conv of list">
+            <td>{{conv.grados}}</td>
+            <td>{{conv.result}}</td>
+        </tr>
+    </Table>
+</div>
